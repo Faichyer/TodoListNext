@@ -48,10 +48,10 @@ function TodoForm(props) {
               value={input}
               onChange={handleChange}
               name='textTodo'
-              className='todo-input bg-white text-black py-2 px-4 rounded border-black border-4 border-solid'
+              className='todo-input'
               ref={inputRef}
             />
-            <button onClick={handleSubmit} className='todo-button btn-blue ml-6'>
+            <button onClick={handleSubmit} className='todo-button'>
               Add todo
         </button>
           </>

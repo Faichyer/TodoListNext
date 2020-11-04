@@ -7,13 +7,72 @@
 @tailwind components;
 /* Stop purging. */
 
-/* Write your own custom component styles here */
-.btn-blue {
-  @apply bg-blue-500 text-white font-bold py-2 px-4 rounded;
-}
-
 /* Start purging... */
 @tailwind utilities;
 /* Stop purging. */
 
 /* Your own custom utilities */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+.todo-app {
+  @apply flex flex-col justify-start w-64 min-w-full bg-gray-800 text-center rounded-2xl pb-4 mx-32
+}
+
+
+.complete {
+  @apply line-through opacity-50
+}
+
+.todo-form {
+  @apply mb-8
+}
+
+.todo-input {
+  @apply px-6 py-4 h-16 rounded-tl-lg rounded-bl-lg border-2 border-solid border-black w-48 text-black bg-transparent
+}
+
+.todo-input::placeholder {
+  color: #e2e2e2;
+}
+
+.todo-button {
+
+  @apply px-6 py-4 h-16 rounded-tr-lg rounded-br-lg border-none cursor-pointer outline-none bg-black text-white
+
+}
+
+.todo-input.edit {
+  border: 2px solid #000;
+}
+
+.todo-button.edit {
+  background: #000;
+  padding: 16px 22px;
+}
+
+.todo-container {
+  @apply flex flex-row relative
+}
+
+.todo-row {
+  @apply flex justify-between items-center mx-4 text-black p-6 border-2 border-solid border-black w-11/12
+}
+
+.icons {
+  @apply flex items-center cursor-pointer text-xl
+}
+
+.delete-icon {
+  @apply text-black mr-2
+}
+
+.edit-icon {
+  @apply text-black
+}
