@@ -1,3 +1,5 @@
+import TodoList from '../components/TodoList'
+
 export default function Home() {
   return (
     <div>
@@ -5,6 +7,7 @@ export default function Home() {
         <h1 className="text-5xl text-center text-accent-1">
           Todo List Next.Js
         </h1>
+        <TodoList />
       </div>
     </div>
   )
