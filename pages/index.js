@@ -1,9 +1,11 @@
-import Head from 'next/head'
-
 export default function Home() {
   return (
     <div>
-      <h1>Todo List</h1>
+      <div className="py-20">
+        <h1 className="text-5xl text-center text-accent-1">
+          Todo List Next.Js
+        </h1>
+      </div>
     </div>
   )
 }
